@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+.clock-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(137deg, #8052ec, #d161ff);
+}
+
+.clock {
+  font-size: 10rem;
+  font-weight: 600;
+  color: #f1ebeb;
+  display: grid;
+  grid-template-columns: 15rem auto 15rem auto 15rem;
+  gap: 1.2rem;
+}
+
+.hour,
+.min,
+.sec {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 0 0.4rem 0 rgba(255, 255, 255, 0.534);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  letter-spacing: 5;
+}
